@@ -19,13 +19,17 @@ import csv
 paths=[]
 path=[]
 counter=0
+
+#folder where the data will be exported
 folder='C:\Users\py15asm\Desktop\Playing_with_python'
+#folder where the code will scan
+day_folder='W:\\Formatted Correctly'
 
 def find_csv_filenames( path_to_dir, suffix=".csv" ):
     filenames = listdir(path_to_dir)
     return [ filename for filename in filenames if filename.endswith( suffix ) ]
             
-day_folder='W:\\Formatted Correctly'
+
 
 for name in glob.glob(day_folder+'/*'): 
     if os.path.isdir(name):
