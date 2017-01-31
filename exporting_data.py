@@ -96,6 +96,6 @@ for i in range(0,number_days):
             
             counter=counter+2
             
-#
+
         
 np.savetxt(folder+'\\Data '+'.csv',data,header=header,delimiter=',')       
